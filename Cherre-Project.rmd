@@ -47,8 +47,7 @@ frequent_Browsers <- people_sites %>%
   summarize(total_visits = sum(site_count)) %>% 
   arrange(desc(total_visits)) %>% 
   head(10) %>% 
-  ungroup() %>% 
-  select(-first_name, -last_name)
+  ungroup() 
 
 gt(frequent_Browsers) %>% 
   
@@ -58,7 +57,9 @@ gt(frequent_Browsers) %>%
  
 
   cols_label(id = "Person ID",
-             total_visits = "Number of Visits") %>% 
+             total_visits = "Number of Visits",
+             first_name = "First Name",
+             last_name = "Last Name") %>% 
 
   
   as_raw_html() %>% as.character() %>% cat()
