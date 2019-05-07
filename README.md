@@ -5,7 +5,7 @@
 https://www.rstudio.com/products/rstudio/download/ (download Rstudio desktop client)
 
 Assuming the Rstudio desktop client is already installed:  
-- Clone the respository (
+- Clone the respository 
 - Open the cloned directory in RStudio
 - Install the necessary libraries by running the code block below
 - Knit the `Cherre-Project.rmd` file to create the desired table output of the top 10 site visitors (Frequent Browsers). 
